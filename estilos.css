@@ -1,0 +1,87 @@
+/*
+Poner la altura al 100% en las etiquetas body
+y html para que la imagen de fondo cubra toda
+la pagina. 
+*/
+body,html {
+           height: 100%; 
+           /*height es
+           altura*/ 
+          }
+
+.imgfondo	
+	{
+     /*Imagen de fondo*/
+     background-image: url('img/fondo.jpg');
+     /*Pantalla completa*/
+     height: 100%;
+     /*Centramos la imagen de fondo.*/
+     background-position: center;
+     /*Escalar y hacer zoom en la imagen.*/
+     background-size: cover;
+     /*Añadir posicion: tiene que ser relativa para permitir elementos
+     dentro de la imagen posicionados de manera absoluta, por ejemplo
+     algun texto.*/
+     position: relative;
+     /*Todo elemento dentro de la clase .imgfondo tendra el color 
+     blanco si estos fueran de textos.*/
+     color: white;
+     /*Añadir una fuente.*/
+     font-family: “Times New Roman”, Times, serif;
+     /*Obligo a que la fuente tenga un tamaño de 25px.*/
+     font-size: 25px;
+	}
+
+/*Posicion de texto en el medio.*/
+.medio
+	{
+     position: absolute;
+     
+     top: 50%;
+
+     left: 50%;
+
+     transform: translate(-50%,-50%);
+
+     text-align: center;
+	}
+
+.arribaizquierda
+	{
+     /*Posicion del texto en la esquina que se 
+     encuentra arriba a la izquierda.*/
+     position: absolute;
+
+     top:0;
+
+     left: 16px;
+	}
+
+.abajoizquierda
+	{
+     /*Posicion del texto en la esquina que se 
+     encuentra abajo a la izquierda.*/		
+     
+     position: absolute;
+
+     bottom: 0;
+     
+     left: 16px;
+    }
+
+	/*utilizar linea horizontal*/ 
+	hr{
+       margin: auto;
+
+       width: 40%;
+	  }
+
+
+
+
+
+
+
+
+
+
